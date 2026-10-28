@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ج1 تقييم الثغرات | الوحدة 11</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=IBM+Plex+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="c1" data-prev="index.html" data-next="c2.html">
+<div class="app">
+  <aside class="side" id="side"></aside>
+  <div class="main">
+    <header class="bar">
+      <button class="menu-btn" id="btnMenu" type="button">الأقسام</button>
+      <a href="index.html" style="text-decoration:none;color:inherit;font-weight:700">الوحدة 11 · ج و د</a>
+      <nav class="quick">
+        <a href="index.html">البداية</a>
+        <a href="c1.html" aria-current="page">الثغرات</a>
+        <a href="c2.html">الشدة</a>
+        <a href="c3.html">الخطة</a>
+        <a href="c4.html">السياسات</a>
+        <a href="incident.html">الحادث</a>
+        <a href="c5.html">المزود</a>
+        <a href="d1.html">الدليل</a>
+        <a href="d2.html">التقرير</a>
+        <a href="glossary.html">المعجم</a>
+      </nav>
+    </header>
+    <div class="deck">
+
+      <section class="slide hero" id="c1-open">
+        <p class="kicker">ج1 · تقييم الثغرات <span class="t" data-en="Assessment of computer system vulnerabilities" data-say="Assessment of computer system vulnerabilities"></span></p>
+        <h1>الثغرة باب لم يُقفل. الأداة تساعدنا أن نرى الباب، ولا تغني عن السؤال: من يدخل منه؟</h1>
+        <p class="lead">في مدرسة الريادة نبحث عن الثغرات في الأجهزة، وفي الموقع، وفي العادة اليومية للناس. الأداة تكشف. التدريب يكشف. والخبير الذي لم يصمّم الشبكة يرانا كما يرانا الغريب.</p>
+      </section>
+
+      <section class="slide" id="ports">
+        <p class="kicker">ج1 · فاحص المنافذ <span class="t" data-en="Port scanner" data-say="Port scanner"></span></p>
+        <h2>المنفذ باب لتطبيق. إن كان التطبيق غير موجود، الباب المفتوح زينة للمهاجم</h2>
+        <p class="abbr">فاحص المنافذ <strong>برنامج</strong>. يُثبَّت على جهاز ثم يُشغَّل، ويجرّب الأبواب من خارجها. <span class="t" data-en="Port scanner is a program" data-say="Port scanner is a program">برنامج فاحص المنافذ</span></p>
+        <div class="grid-2">
+          <svg class="diagram" viewBox="0 0 460 240" role="img" aria-label="خمسة أبواب، أربعة مغلقة وواحد مفتوح وعليه ضوء">
+            <rect width="460" height="240" fill="#fbf8f2"/>
+            <g font-size="13" fill="#10283d">
+              <rect x="24" y="40" width="70" height="120" rx="6" fill="#e7eef6" stroke="#1a4060"/>
+              <text x="59" y="180" text-anchor="middle">مغلق</text>
+              <rect x="110" y="40" width="70" height="120" rx="6" fill="#e7eef6" stroke="#1a4060"/>
+              <text x="145" y="180" text-anchor="middle">مغلق</text>
+              <rect x="196" y="36" width="74" height="124" rx="6" fill="#fff4e8" stroke="#a56a34" stroke-width="3"/>
+              <text x="233" y="100" text-anchor="middle" fill="#7c4a1e">مفتوح</text>
+              <text x="233" y="180" text-anchor="middle">لا برنامج خلفه</text>
+              <rect x="286" y="40" width="70" height="120" rx="6" fill="#e7eef6" stroke="#1a4060"/>
+              <text x="321" y="180" text-anchor="middle">مغلق</text>
+              <rect x="372" y="40" width="70" height="120" rx="6" fill="#e7eef6" stroke="#1a4060"/>
+              <text x="407" y="180" text-anchor="middle">مغلق</text>
+            </g>
+          </svg>
+          <article class="card">
+            <h3>ماذا يفعل الفحص؟</h3>
+            <p>التطبيقات تتكلم عبر أبواب مرقمة على الشبكة. فاحص المنافذ يجرب هذه الأبواب ويقول: مفتوح أو مغلق. نفحص عنوان المدرسة الظاهر للشارع، أو جهازًا داخل الشبكة، بإذن سارة لا على شبكة الناس.</p>
+            <p class="why"><strong>ليش يهم؟</strong> موقع المدرسة ترك باب الإدارة مفتوحًا بعد الصيانة. لا أحد يستخدمه. الغريب يجربه قبل أن يجرب الباب الرئيسي. الإغلاق يكون عادة من جدار الحماية.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="slide" id="registry">
+        <p class="kicker">ج1 · مدقق السجل <span class="t" data-en="Registry checker" data-say="Registry checker"></span></p>
+        <h2>سجل ويندوز دفتر الإعدادات. بعض البرامج الضارة تكتب سطرًا فيه كي تعمل مع إقلاع الجهاز</h2>
+        <div class="grid-2">
+          <article class="def">
+            <span class="tag">بلغة بسيطة</span>
+            <p>ويندوز، وهو نظام تشغيل من شركة مايكروسوفت، يحفظ إعداداته وإعدادات برامجه في قاعدة اسمها السجل. مدقق السجل <strong>برنامج</strong> يقرأ هذا الدفتر ويبحث عن سطر مكسور أو غريب.</p>
+            <p>في المختبر جهاز بطيء. الفحص يجد برنامجًا يبدأ مع الجهاز لم تثبّته المدرسة. هذا أثر يستحق السؤال، لا زر «تنظيف» نضغطه ونذهب.</p>
+          </article>
+          <article class="impact risk">
+            <h3>حد الأداة</h3>
+            <p>منظف السجل المتسرع قد يحذف سطرًا يحتاجه ويندوز، فيتعطل الصف صباح الامتحان. الأداة للفحص بإذن، لا للعبث. كل تغيير نعرف لماذا فعلناه، وهذا سينفعنا حين نصل إلى الدليل الجنائي.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="slide" id="web">
+        <p class="kicker">ج1 · ماسح ثغرات المواقع <span class="t" data-en="Website vulnerability scanner" data-say="Website vulnerability scanner"></span></p>
+        <h2>الماسح يسأل موقع المدرسة: هل صندوق البحث يصدّق أي جملة تُكتب فيه؟</h2>
+        <p class="abbr">ماسح ثغرات المواقع <strong>برنامج</strong>. يُشغَّل على موقع بإذن صاحبه، ويرسل فحوصات، ثم يكتب تقريرًا. <span class="t" data-en="Website vulnerability scanner is a program" data-say="Website vulnerability scanner is a program">برنامج ماسح المواقع</span></p>
+        <div class="grid-2">
+          <article class="story">
+            <span class="tag">مثال حي</span>
+            <p>ميرال تبحث عن «جدول الامتحان». الموقع يعيد الجدول. ثم يكتب شخص في الصندوق جملة ليست بحثًا، بل أمرًا تفهمه قاعدة البيانات. إن كان الموقع ساذجًا، يعيد بيانات لا يخصها البحث: أسماء، أو أرقام هواتف.</p>
+            <p>هذا الهجوم اسمه حقن الأوامر. قاعدة البيانات تُسأل بلغة الاستعلام المهيكلة، واسمها بالإنجليزية <bdi>Structured Query Language</bdi>، وحروفها الأولى شائعة في الاسم المختصر <bdi>SQL</bdi>. الهجوم إذن: حقن هذه اللغة، أو <bdi>SQL Injection</bdi>.</p>
+          </article>
+          <article class="card">
+            <h3>ماذا نفعل بالماسح؟</h3>
+            <ul>
+              <li>يفحص الخادم الذي يستضيف الموقع، ويكشف الحقن وثغرات معروفة.</li>
+              <li>بعض الماسحات مجانية، وقد تطلب تسجيلًا. التشغيل على موقع المدرسة بإذن، لا على موقع غيرنا.</li>
+              <li>النتيجة قائمة أبواب، لا وسام أمان. الباب الذي ظهر نغلقه ثم نعيد الفحص.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="slide" id="manage">
+        <p class="kicker">ج1 · اكتشاف الثغرات وإدارتها <span class="t" data-en="Vulnerability detection and management software" data-say="Vulnerability detection and management software"></span></p>
+        <h2>الماسح صورة لليوم. برنامج الإدارة حارس يبقى، ويرتب ما رآه، ويقترح ماذا نفعل</h2>
+        <div class="grid-3">
+          <article class="card">
+            <h3>يراقب</h3>
+            <p>يجمع ما يحدث على الشبكة طوال الأسبوع، لا في ساعة الفحص فقط.</p>
+          </article>
+          <article class="card">
+            <h3>يفسر</h3>
+            <p>يبحث عن إعداد خاطئ قد يسمح باستغلال ثغرة، ثم ينبّه سارة.</p>
+          </article>
+          <article class="card">
+            <h3>يقترح</h3>
+            <p>لا يكتفي بالصراخ. يقول: حدّثي هذا البرنامج، أو أغلقي هذا الباب.</p>
+          </article>
+        </div>
+        <p class="abbr">مثال من هذا النوع: حماية مايكروسوفت المتقدمة من التهديدات. اسمها بالإنجليزية <bdi>Microsoft Defender Advanced Threat Protection</bdi>. الحروف <bdi>ATP</bdi> اختصار <bdi>Advanced Threat Protection</bdi>، أي الحماية المتقدمة من التهديدات.</p>
+      </section>
+
+      <section class="slide" id="users">
+        <p class="kicker">ج1 · تقييم ثغرات المستخدم <span class="t" data-en="User vulnerabilities" data-say="User vulnerabilities"></span></p>
+        <h2>أحيانًا الثغرة ليست منفذًا. هي شخص متعب، أو ورقة، أو صديقة</h2>
+        <div class="grid-3">
+          <article class="impact risk">
+            <h3>ثغرة المال</h3>
+            <p>عرض نقود، أو تهديد، مقابل كلمة مرور. ليلى عند الاستقبال ترى أهلًا غاضبين كل يوم. الضغط نفسه قد يأتي بصورة رسالة: «ادفعي وإلا نشرنا صورتك».</p>
+          </article>
+          <article class="story">
+            <h3>ثغرة المكان</h3>
+            <p>كلمة المرور على ورقة لاصقة بجانب الشاشة، أو بطاقة المعلمة التي سقطت في الباص. الباب الرقمي صار مفتاحًا على الأرض.</p>
+          </article>
+          <article class="think">
+            <h3>ثغرة الحديث</h3>
+            <p>ميرال تخبر صديقتها برقم دخول بوابة العلامات «حتى تساعدنا». الصديقة ليست مهاجمة، لكن السر خرج من صاحبه.</p>
+          </article>
+        </div>
+        <p class="why"><strong>ليش التدريب والتدقيق؟</strong> المحاضرة مرة في أول السنة تُنسى. التدقيق يسأل بعد شهر: هل الورقة ما زالت على الشاشة؟ التدريب يُعاد حين تتغير القاعدة أو بعد حادثة.</p>
+      </section>
+
+      <section class="slide" id="review">
+        <p class="kicker">ج1 · مراجعة طرف خارجي <span class="t" data-en="Independent third-party review" data-say="Independent third party review"></span></p>
+        <h2>سارة لا ترى خطأها لأن الشبكة في رأسها «صحيحة كما قصدتها»</h2>
+        <div class="grid-2">
+          <article class="card">
+            <h3>المثال</h3>
+            <p>سارة وصلت شبكة الأهالي بجوار خادم العلامات لأن ذلك كان أسرع يوم الافتتاح. هي تعرف القصد، فترى التصميم سليمًا. خبير لم يبنِ الشبكة يسأل سؤالًا واحدًا: لماذا يقدر هاتف الأب أن يقترب من علامات ميرال؟</p>
+          </article>
+          <article class="impact good">
+            <h3>متى؟</h3>
+            <p>قبل التشغيل، لا بعد أول أسبوع دراسة. المراجعة قراءة للتصميم وتعليق على حمايته. ما زال الإصلاح رخيصًا: نفصل الشبكتين قبل أن يعتاد الناس الخطأ.</p>
+            <p>هذه المراجعة غير اختبار الاختراق. هنا نقرأ الخطة. هناك نجرب أن نكسر النظام المتفق على تجربته.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="slide" id="pentest">
+        <p class="kicker">ج1 · اختبار الاختراق <span class="t" data-en="Penetration testing" data-say="Penetration testing"></span></p>
+        <h2>الخبير يستخدم أساليب المهاجم، لكن الموعد مكتوب والمقصود أن نجد الثقب لا أن نفوز</h2>
+        <div class="flow">
+          <span><b>1 اتفاق</b>المدرسة تعرف ماذا سيُجرَّب، ومتى، وعلى أي جهاز.</span>
+          <span><b>2 سيناريو</b>مثلًا: جهاز غريب يُوصل في المختبر. هل ظهر في التنبيه؟</span>
+          <span><b>3 ملاحظة</b>هل اكتشفنا الهجوم؟ وماذا فعلنا حين اكتشفناه؟</span>
+          <span><b>4 تقرير</b>قائمة بما نجح اختراقه، لا قصة بطولة.</span>
+        </div>
+        <p class="why"><strong>ليش لا نفاجأ المدرسة يوم الامتحان؟</strong> الاختبار الذي يوقف نظام العلامات في ساعة الامتحان ضرر لا فحص. والتهديدات تتغير، فالقائمة التي نجرّبها هي الهجمات الشائعة الآن، لا قائمة حفظناها من سنة قديمة.</p>
+        <p>يسمونه أحيانًا قرصنة أخلاقية: الأسلوب يشبه أسلوب المخرب، والنية والإذن مختلفان. غالبًا ينفذه خبراء من خارج المدرسة.</p>
+      </section>
+
+      <section class="slide" id="owasp">
+        <p class="kicker">ج1 · أكبر عشرة تهديدات للويب <span class="t" data-en="Open Web Application Security Project top 10" data-say="Open Web Application Security Project top ten"></span></p>
+        <h2>مشروع واحد يجمع الهجمات التي وقعت فعلًا، ويرتب أكثرها أذى</h2>
+        <article class="def">
+          <p>الاسم الكامل: مشروع أمان تطبيقات الويب المفتوحة. بالإنجليزية <bdi>Open Web Application Security Project</bdi>.</p>
+          <p class="abbr">الاختصار <bdi>OWASP</bdi> هو الحروف الأولى من هذا الاسم. لا نكتبه وحدّه في الإجابة حتى نشرح ماذا يعني.</p>
+          <p>المشروع ينشر قائمة بأكبر عشرة تهديدات لمواقع الويب، مبنية على هجمات حقيقية، ويحدّثها لأن الترتيب يتغير. في قائمة سنة 2017 كان الحقن في المرتبة الأولى. في قائمة سنة 2021 صار كسر التحكم في الوصول أولًا، وبقي الحقن ثالثًا. في الحصة نستخدم قائمة 2021 لأنها النسخة التي استقر عليها التدريس، ونذكر أن المشروع يطلب منا مراجعة أحدث قائمة حين نكتب خطة لمؤسسة.</p>
+        </article>
+        <p>
+          <span class="t" data-en="Open Web Application Security Project" data-say="Open Web Application Security Project">مشروع أمان تطبيقات الويب المفتوحة</span>
+        </p>
+      </section>
+
+      <section class="slide" id="owasp-a">
+        <p class="kicker">ج1 · خمسة تهديدات، بمثال من الريادة</p>
+        <h2>الاسم الإنجليزي كامل. المثال من المدرسة. الحماية جملة واحدة</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>التهديد</th><th>في مدرسة الريادة</th><th>ماذا نفعل؟</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>كسر التحكم في الوصول. بالإنجليزية <bdi>Broken Access Control</bdi></td>
+                <td>ميرال تغيّر رقمًا في رابط العلامة فتفتح علامة زميلتها.</td>
+                <td>النظام يسأل: هل هذه الطالبة صاحبة العلامة؟ لا يكتفي بإخفاء الزر.</td>
+              </tr>
+              <tr>
+                <td>إخفاقات التشفير. <bdi>Cryptographic Failures</bdi></td>
+                <td>كلمات مرور المعلمات محفوظة كما كُتبت، بلا حماية.</td>
+                <td>نحفظها مشفّرة، ونشغّل الموقع على اتصال مشفّر.</td>
+              </tr>
+              <tr>
+                <td>الحقن. <bdi>Injection</bdi></td>
+                <td>صندوق البحث يقبل أمرًا يصل إلى قاعدة البيانات.</td>
+                <td>النظام يفصل كلام الزائر عن أمر قاعدة البيانات.</td>
+              </tr>
+              <tr>
+                <td>تصميم غير آمن. <bdi>Insecure Design</bdi></td>
+                <td>نظام العلامات بُني ولم يُسأل: من يحق له التعديل؟</td>
+                <td>سؤال الصلاحية يُكتب في التصميم، قبل البرمجة.</td>
+              </tr>
+              <tr>
+                <td>إعداد أمني خاطئ. <bdi>Security Misconfiguration</bdi></td>
+                <td>لوحة الموقع ما زالت باسم المدير وكلمة المصنع.</td>
+                <td>نغيّر كلمة المصنع ونغلق الصفحات التي لا نستخدمها.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="slide" id="owasp-b">
+        <p class="kicker">ج1 · الخمسة التالية</p>
+        <h2>القديم، والهوية، والتحديث الكاذب، والصمت، والطلب الذي يخدع الخادم</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>التهديد</th><th>في مدرسة الريادة</th><th>ماذا نفعل؟</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>مكوّنات قديمة فيها ثغرات. <bdi>Vulnerable and Outdated Components</bdi></td>
+                <td>إضافة الموقع لم تُحدَّث منذ سنتين، وثغرتها منشورة.</td>
+                <td>جرد الإضافات، وتحديث ما نستخدمه، وحذف ما لا نستخدمه.</td>
+              </tr>
+              <tr>
+                <td>فشل التعرف والتحقق. <bdi>Identification and Authentication Failures</bdi></td>
+                <td>كلمة المرور «123456»، ولا قفل بعد المحاولات الخاطئة.</td>
+                <td>قاعدة لكلمة المرور، وقفل مؤقت، وتحقق ثانٍ للحساب الحساس.</td>
+              </tr>
+              <tr>
+                <td>فشل سلامة البرمجيات والبيانات. <bdi>Software and Data Integrity Failures</bdi></td>
+                <td>تحديث يُنزَّل من صفحة غير موثوقة ويُثبَّت فورًا.</td>
+                <td>التحديث من مصدر المدرسة فقط، بعد التحقق من سلامته.</td>
+              </tr>
+              <tr>
+                <td>فشل السجلات والمراقبة. <bdi>Security Logging and Monitoring Failures</bdi></td>
+                <td>دخول غريب إلى العلامات حدث يوم الأحد، ولم تره سارة إلا يوم الخميس.</td>
+                <td>سجل للدخول الفاشل، وتنبيه في اليوم نفسه.</td>
+              </tr>
+              <tr>
+                <td>تزوير الطلب من جهة الخادم. <bdi>Server-Side Request Forgery</bdi></td>
+                <td>صفحة في الموقع تجعل الخادم يجلب رابطًا داخليًا لا يُفترض أن يراه الزائر.</td>
+                <td>الخادم لا يصدّق روابط الزائر، ولا يطلب من داخل الشبكة نيابة عنه.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="abbr">الاختصار الشائع للتهديد الأخير هو <bdi>SSRF</bdi>، أي الحروف الأولى من <bdi>Server-Side Request Forgery</bdi>. في الإجابة نكتب الاسم العربي أو الإنجليزي كاملًا.</p>
+      </section>
+
+    </div>
+  </div>
+</div>
+<div class="toast" id="toast" role="status"></div>
+<script src="app.js"></script>
+</body>
+</html>

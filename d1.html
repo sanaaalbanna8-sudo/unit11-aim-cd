@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>د1 جمع الأدلة | الوحدة 11</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=IBM+Plex+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="d1" data-prev="c5.html" data-next="d2.html">
+<div class="app">
+  <aside class="side" id="side"></aside>
+  <div class="main">
+    <header class="bar">
+      <button class="menu-btn" id="btnMenu" type="button">الأقسام</button>
+      <a href="index.html" style="text-decoration:none;color:inherit;font-weight:700">الوحدة 11 · ج و د</a>
+      <nav class="quick">
+        <a href="index.html">البداية</a>
+        <a href="c1.html">الثغرات</a>
+        <a href="c2.html">الشدة</a>
+        <a href="c3.html">الخطة</a>
+        <a href="c4.html">السياسات</a>
+        <a href="incident.html">الحادث</a>
+        <a href="c5.html">المزود</a>
+        <a href="d1.html" aria-current="page">الدليل</a>
+        <a href="d2.html">التقرير</a>
+        <a href="glossary.html">المعجم</a>
+      </nav>
+    </header>
+    <div class="deck">
+
+      <section class="slide hero" id="d1-open">
+        <p class="kicker">د1 · جمع الأدلة الجنائية <span class="t" data-en="Forensic collection of evidence" data-say="Forensic collection of evidence"></span></p>
+        <h1>بعد الحادث نريد دليلًا يُصدَّق. سببان: الملاحقة، وألّا يتكرر الشيء</h1>
+        <p class="lead">أولًا، قد نحتاج الدليل إن وصلت القصة إلى جهة تسأل من فعل. ثانيًا، إن فهمنا ماذا حدث بالضبط نغلق الباب نفسه. التنظيف السريع يخدم الحصة اليوم ويضيع السببين معًا.</p>
+        <p>على جهاز المكتب نسمي العمل <span class="t" data-en="Desktop forensics" data-say="Desktop forensics">الإجراءات الجنائية المكتبية</span>. وعلى الجهاز وهو يعمل <span class="t" data-en="Live forensics" data-say="Live forensics">الإجراءات الجنائية المباشرة</span>. وعلى الطريق بين الأجهزة <span class="t" data-en="Network forensics" data-say="Network forensics">الإجراءات الجنائية للشبكة</span>.</p>
+      </section>
+
+      <section class="slide" id="desktop">
+        <p class="kicker">د1 · مصادرة الجهاز <span class="t" data-en="Confiscation of devices" data-say="Confiscation of devices"></span></p>
+        <h2>نعزل الحاسوب ونأخذه. المحمول يُؤخذ من صاحبه، لا يُترك «لأكمل حصتي»</h2>
+        <div class="flow">
+          <span><b>1 مصادرة</b>من أخذ الجهاز، ومتى، ومن أين.</span>
+          <span><b>2 صورة</b>نسخة للقرص كله، والأصل يُقفل.</span>
+          <span><b>3 تحليل</b>على النسخة: محذوف، وبحث، ونوع ملف.</span>
+          <span><b>4 أثر</b>إعدادات، وسجلات، ونشاط، وتنبيهات.</span>
+        </div>
+        <p class="why"><strong>ليش العزل أولًا؟</strong> جهاز هدى إن بقي على الشبكة قد يستقبل اتصالًا يغيّر الملفات ونحن ننظر. الورقة التي تسمى المستلم تحمي سارة أيضًا: لم يختفِ الجهاز بين المكاتب.</p>
+      </section>
+
+      <section class="slide" id="image">
+        <p class="kicker">د1 · صورة النظام <span class="t" data-en="System image" data-say="System image"></span></p>
+        <h2>النسخة المكررة الجنائية صورة منخفضة المستوى للقرص كله. الأصل يذهب إلى خزانة</h2>
+        <div class="grid-2">
+          <article class="def">
+            <span class="tag">ما هي؟</span>
+            <p>ليست سحب الملفات المهمة إلى ذاكرة. هي نسخة للقرص كما هو، بما فيه الفراغ الذي قد يخفي ملفًا حُذف. اسمها أيضًا <span class="t" data-en="Forensic duplicate" data-say="Forensic duplicate">نسخة مكررة جنائية</span>.</p>
+            <p>القرص الأصلي يُخزَّن بأمان. التحقيق يعمل على النسخة. هكذا نثبت أن الفحص لم يغيّر شيئًا على القرص الذي وُجد.</p>
+          </article>
+          <article class="story">
+            <h3>في الريادة</h3>
+            <p>سارة إن نسخت «مجلد التنزيلات» فقط، ضاع ما حذفته الرسالة من سطح المكتب. الصورة الكاملة تُبقي المكان كما كان صباح الرابط.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="slide" id="analysis">
+        <p class="kicker">د1 · أداة التحليل <span class="t" data-en="Forensic analysis tool" data-say="Forensic analysis tool"></span></p>
+        <h2>الأداة تقرأ النسخة: تسترجع محذوفًا، وتبحث عن عبارة، وتُبعد الملفات التي لا تخص الحادث</h2>
+        <div class="grid-2">
+          <article class="card">
+            <h3>ماذا نقدر نفعل؟</h3>
+            <ul>
+              <li>استعادة ملف حُذف إن بقي أثره على القرص.</li>
+              <li>البحث عن عبارة تخص الحادث في كل الملفات، لا في مجلد واحد.</li>
+              <li>تصفية الأنواع التي لا علاقة لها، حتى لا نغرق في صور الحصة.</li>
+            </ul>
+          </article>
+          <article class="story">
+            <h3>إن كان الشك حقن أوامر</h3>
+            <p>إن ظننا أن الجهاز شارك في حقن لغة الاستعلام المهيكلة، نبحث في النسخة عن أوامر تلك اللغة. الاسم الإنجليزي للأوامر <span class="t" data-en="SQL commands" data-say="S Q L commands">أوامر لغة الاستعلام</span>. نبحث عن الأثر، ولا نعيد الهجوم على موقع المدرسة.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="slide" id="traces">
+        <p class="kicker">د1 · الملفات، والسجل، والنشاط، والتنبيه</p>
+        <h2>أربعة أماكن على الجهاز نفسه. كل واحد يجاوب سؤالًا مختلفًا</h2>
+        <div class="grid-2">
+          <article class="card">
+            <h3>الملفات والإعدادات <span class="t" data-en="Files and settings" data-say="Files and settings"></span></h3>
+            <p>متى آخر تحديث لنظام التشغيل؟ متى آخر تحديث لبرنامج الحماية؟ أي ملف نُزّل؟ أي رسالة فُتحت، وأي مرفق معها؟</p>
+          </article>
+          <article class="card">
+            <h3>سجلات النظام <span class="t" data-en="System logs" data-say="System logs"></span></h3>
+            <p>ويندوز يكتب الأحداث في <span class="t" data-en="Windows Event Log" data-say="Windows Event Log">سجل الأحداث</span>. كل سطر معه وقت: من دخل، ومتى، وأين فشلت المحاولة.</p>
+          </article>
+          <article class="card">
+            <h3>نشاط المستخدم <span class="t" data-en="User activity" data-say="User activity"></span></h3>
+            <p>وقت الدخول والخروج. ملفات أُنشئت أو حُذفت أو نُزّلت. البريد وسجل التصفح. هذا يفرّق «هدى فتحت الرابط» عن «أحد استخدم حسابها ليلًا».</p>
+          </article>
+          <article class="card">
+            <h3>تحليل البرامج الضارة <span class="t" data-en="Malware analysis" data-say="Malware analysis"></span></h3>
+            <p>برنامج الحماية يحتفظ بسجل: متى جرى الفحص، ومتى نُزّلت تعريفات الفيروسات الجديدة. تعريف قديم صباح الحادث يفسر لماذا مرّ الملف.</p>
+          </article>
+        </div>
+        <article class="think">
+          <h3>وقفة</h3>
+          <p>دخول غير مأذون إلى العلامات. ماذا تبحثين في سجل الأحداث؟ وماذا تعني محاولات فاشلة كثيرة؟</p>
+          <button type="button" class="reveal-btn" aria-expanded="false">أظهري ما نناقشه بعد التفكير</button>
+          <div class="reveal" hidden>
+            <p>السطر مختوم بالوقت. نبحث: أي حساب، وأي ساعة، وهل هدى كانت في المدرسة. محاولات فاشلة ثم نجاح قد تعني تخمينًا أصاب. محاولات فاشلة بلا نجاح قد تعني محاولة لم تكتمل. الاثنان حادث يستحق التسجيل، لا «البرنامج يزعجنا».</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="slide" id="live">
+        <p class="kicker">د1 · والإجراءات المباشرة <span class="t" data-en="Live forensics" data-say="Live forensics"></span></p>
+        <h2>الجهاز يعمل. الذاكرة الحية تموت إن فصلنا الكهرباء، ومعها أشياء لا تعيش على القرص</h2>
+        <p class="abbr">هذه الذاكرة اسمها ذاكرة الوصول العشوائي. بالإنجليزية <bdi>Random Access Memory</bdi>، واختصارها <bdi>RAM</bdi>. <span class="t" data-en="Random Access Memory" data-say="Random Access Memory">ذاكرة الوصول العشوائي</span></p>
+        <div class="grid-2">
+          <article class="impact risk">
+            <h3>ماذا يضيع مع الإطفاء؟</h3>
+            <ul>
+              <li>برنامج ضار يعيش في الذاكرة ولم يُكتب بعد على القرص.</li>
+              <li>عنوان كان الجهاز متصلًا به تلك اللحظة.</li>
+              <li>ملفات مؤقتة، مثل التي ينشئها محرر النصوص ثم يمسحها عند الإغلاق.</li>
+              <li>مفاتيح تشفير، ورسائل دردشة، ومحتوى الحافظة، واتصالات الشبكة المفتوحة.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>وماذا يصعب ونحن نعمل؟</h3>
+            <ul>
+              <li><span class="t" data-en="Changing data in situ" data-say="Changing data in situ">البيانات تتغير في مكانها</span>: فتح الملف يكتب وقتًا جديدًا.</li>
+              <li>إصلاح التالف قد يفسده أكثر إن كتبنا فوقه.</li>
+              <li>التقاط الذاكرة الحية يتم <strong>ببرنامج</strong> جنائي مخصص. ينسخ الذاكرة إلى ملف والجهاز ما زال يعمل، ثم ندرس الملف. <span class="t" data-en="Memory capture is done with a program" data-say="Memory capture is done with a program">برنامج التقاط الذاكرة</span></li>
+            </ul>
+            <p>قرص مشفّر بأداة مايكروسوفت المسماة <span class="t" data-en="BitLocker" data-say="BitLocker">بت لوكر</span> لا تُقرأ بياناته من غير دخول مستخدم مخوّل. إطفاء الجهاز قبل هذا الدخول قد يُقفل الدليل.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="slide" id="network">
+        <p class="kicker">د1 · على الشبكة <span class="t" data-en="Network forensics" data-say="Network forensics"></span></p>
+        <h2>منهج الاختبار يُتفق عليه قبل أن نلمس شبكة تعمل. محاكاة تُسقط النظام ليست تحقيقًا</h2>
+        <div class="flow">
+          <span><b>اتفاق</b>مع الإشراف الجنائي وجهة التحقيق. الاختبار قد يشبه الهجوم.</span>
+          <span><b>إذن</b>على شبكة المدرسة فقط. لا شبكة الجيران.</span>
+          <span><b>لا تعطيل</b>لا نحاكي هجومًا يوقف نظام الامتحان.</span>
+          <span><b>نوع الأداة</b>واحدة تسمع. وأخرى تغيّر وقد توقظ خدمة.</span>
+        </div>
+        <p>الهجوم الذي يوقف النظام اسمه <span class="t" data-en="Denial of Service" data-say="Denial of Service">قطع الخدمة</span>، واختصاره <bdi>DoS</bdi> من الحروف الأولى لهذا الاسم. <span class="t" data-en="Passive analysis tools" data-say="Passive analysis tools">الأدوات السلبية</span> تسمع فقط. <span class="t" data-en="Active analysis tools" data-say="Active analysis tools">الأدوات النشطة</span> تغيّر شيئًا ثم تجمع النتيجة.</p>
+      </section>
+
+      <section class="slide" id="devices">
+        <p class="kicker">د1 · الجدار، والموجّه، والمبدّل، ونقطة الوصول</p>
+        <h2>السجل يقول من قُبل ومن رُفض. نقطة الوصول قد تعرف أي جهاز التصق بالموجة</h2>
+        <div class="grid-2">
+          <article class="card">
+            <h3>جدار الحماية <span class="t" data-en="Firewall" data-say="Firewall"></span></h3>
+            <p>غالبًا يسجل الاتصالات التي قبلها والتي رفضها. ساعة خروج اتصال من جهاز هدى إلى عنوان غريب أهم من اسم الملف.</p>
+            <h3>الموجّه <span class="t" data-en="Router" data-say="Router"></span></h3>
+            <p>قد يجمع سجل نشاط: أي طريق سلكته الحزمة. المبدّل <span class="t" data-en="Switch" data-say="Switch"></span> يصل أجهزة الصف، وإعداداته تقول من كان على أي منفذ.</p>
+          </article>
+          <article class="card">
+            <h3>نقطة الوصول <span class="t" data-en="Wireless access point" data-say="Wireless access point"></span></h3>
+            <p>بعضها يحتفظ بسجل الأجهزة التي التصقت. وإن كان التصفية مفعّلة، ففيها قائمة عناوين مسموحة. العنوان اسمه عنوان التحكم في الوصول إلى الوسائط، بالإنجليزية <bdi>Media Access Control</bdi>، واختصاره <bdi>MAC</bdi>. <span class="t" data-en="Media Access Control address" data-say="Media Access Control address">عنوان التحكم في الوصول إلى الوسائط</span></p>
+            <p>سجلات العميل والخادم <span class="t" data-en="Client or server logs" data-say="Client or server logs"></span> تُقرأ مع سجل الجدار. واحد منهما قد ينقص إن اقتطعناه. وتنبيهات البرامج الضارة على هذه الأجهزة تُحفظ ولا تُمسح لأن الشاشة انزعجت.</p>
+          </article>
+        </div>
+      </section>
+
+    </div>
+  </div>
+</div>
+<div class="toast" id="toast" role="status"></div>
+<script src="app.js"></script>
+</body>
+</html>
